@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int sum=0,n,digits;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    for(n;n=n;n=n/10)
+    {
+        digits=n%10;
+        sum=sum+digits;
+    }
+    printf("Result:%d",sum);
+    return 0;
+}
