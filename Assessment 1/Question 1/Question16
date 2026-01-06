@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int n,result,firstTwo;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    firstTwo=(n/1000%10)+(n/100%10)*10;
+    result=firstTwo*100+(n%100);
+    printf("%d",result);
+    return 0;
+    
+}
