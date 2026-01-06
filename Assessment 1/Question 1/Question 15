@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int num, first, last, lastTwo, result;
+    printf("Enter num: ");
+    scanf("%d",&num);
+    first=num/100;
+    lastTwo=num%100;
+    last=(lastTwo%10)*10+(lastTwo/10);
+    result=first*100+last;
+    printf("%d\n",result);
+    return 0;
+}
