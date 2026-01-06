@@ -1,8 +1,11 @@
 #include<stdio.h>
 int main()
 {
-int x,sum;
-sum=x+2;
-printf("%d",sum);
-return 0;
+    int x,result;
+    printf("Enter x: ");
+    scanf("%d",&x);
+    result=x+2;
+    printf("%d",result);
+    return 0;
+    
 }
