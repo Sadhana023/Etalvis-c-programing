@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    sum=n/10+n%10;
+    printf("%d",n - 5*(sum%2));
+    return 0;
+    
+}
