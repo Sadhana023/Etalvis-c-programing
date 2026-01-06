@@ -4,4 +4,5 @@ int main()
 int x,sum;
 sum=x+2;
 printf("%d",sum);
+return 0;
 }
