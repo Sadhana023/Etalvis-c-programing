@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int i=1,num,count=0,temp,digit,sum;
+    while(i<100000)
+    {
+        temp=i;
+        sum=0;
+        while(temp!=0)
+        {
+            digit=temp%10;
+            sum+=digit;
+            temp/=10;
+        }
+        if(sum==14)count++;
+        i++;
+    }
+    printf("%d",count);
+    return 0;
+}
