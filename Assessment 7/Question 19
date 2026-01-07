@@ -1,0 +1,24 @@
+#include <stdio.h>
+int middle_2digits_prime(int num)
+{
+    if(num<0) num=-num;
+    int middle=(num/10)%100; 
+    if(middle<2) return 0;
+    int i=2;
+    while(i*i<=middle)
+    {
+        if(middle%i==0)
+        return 0;
+        i++;
+    }
+    return 1;
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    if(middle_2digits_prime(num)) 
+    printf("prime");
+    else printf("not prime");
+    return 0;
+}
