@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int num,i=2,flag=0,sum=0,digit,temp;
+    scanf("%d",&num);
+    if(num<=1){printf("Not Prime");return 0;}
+    while(i<=num/2)
+    {
+        if(num%i==0){flag=1;break;}
+        i++;
+    }
+    temp=num;
+    while(temp!=0)
+    {
+        digit=temp%10;
+        sum+=digit;
+        temp/=10;
+    }
+    if(flag==0 && sum==14)
+    printf("Prime and sum 14");
+    else 
+    printf("Condition not met");
+    return 0;
+}
