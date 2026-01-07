@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,min,hcf,i;
+    scanf("%d%d",&a,&b);
+    min=(a<b)?a:b;
+    while(min>=1)
+    {
+        if(a%min==0 && b%min==0){hcf=min;break;}
+        min--;
+    }
+    printf("%d",hcf);
+    return 0;
+}
+``
