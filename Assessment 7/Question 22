@@ -1,0 +1,21 @@
+#include <stdio.h>
+int disp_total_2digit_odd(int num)
+{
+    if(num<0) num=-num;
+    int count=0;
+    while(num>0)
+    {
+        int last2 = num % 100;
+        if(last2>=10 && last2<=99 && last2%2!=0) 
+        count++;
+        num/=10;
+    }
+    return count;
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    printf("%d",disp_total_2digit_odd(num));
+    return 0;
+}
