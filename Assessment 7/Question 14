@@ -1,0 +1,30 @@
+#include <stdio.h>
+int disp_interchange_first_last_digit(int num)
+{
+    if(num<10) return num;
+    int temp=num,digits=0,first,last,middle,sign=1;
+    if(num<0)
+    {
+        num=-num; 
+        sign=-1;
+    }
+    temp=num;
+    while(temp>0)
+    {
+        temp/=10; 
+        digits++;
+    }
+    int p=1;
+    for(int i=1;i<digits;i++) p*=10;
+    first=num/p;
+    last=num%10;
+    middle=(num%p)/10;
+    return sign*(last*p + middle*10 + first);
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    printf("%d",disp_interchange_first_last_digit(num));
+    return 0;
+}
