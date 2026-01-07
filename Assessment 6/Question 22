@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int num,count=0;
+    scanf("%d",&num);
+    while(num>=10)
+    {
+        int lastTwo=num%100;
+        if(lastTwo%2!=0 && lastTwo>=10 && lastTwo<=99)count++;
+        num/=10;
+    }
+    printf("%d",count);
+    return 0;
+}
