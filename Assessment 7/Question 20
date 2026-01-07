@@ -1,0 +1,25 @@
+#include <stdio.h>
+int disp_2digit_even_sum6()
+{
+    int count=0;
+    for(int i=2;i<=9;i++)
+    {
+        int isPrime=1,j=2;
+        while(j*j<=i)
+        {
+            if(i%j==0)
+            { 
+                isPrime=0;
+                break;
+            }
+            j++;
+        }
+        if(isPrime) count++;
+    }
+    return count;
+}
+int main()
+{
+    printf("%d",disp_2digit_even_sum6());
+    return 0;
+}
