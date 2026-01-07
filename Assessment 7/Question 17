@@ -1,0 +1,25 @@
+#include <stdio.h>
+int check_prime(int num){
+    if(num<2) return 0;
+    int i=2;
+    while(i*i<=num){
+        if(num%i==0) return 0;
+        i++;
+    }
+    return 1;
+}
+int sum_of_digits(int num){
+    int sum=0;
+    if(num<0) num=-num;
+    while(num>0){ sum += num%10; num/=10; }
+    return sum;
+}
+int main(){
+    int num;
+    scanf("%d",&num);
+    if(check_prime(num)) printf("prime\n");
+    else printf("not prime\n");
+    if(sum_of_digits(num)==14) printf("sum of digits is 14");
+    else printf("sum of digits is not 14");
+    return 0;
+}
