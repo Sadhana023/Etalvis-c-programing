@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int num,count=0;
+    scanf("%d",&num);
+    while(num>=10)
+    {
+        int lastTwo=num%100;
+        if(lastTwo==16||lastTwo==25||lastTwo==36||lastTwo==49||lastTwo==64||lastTwo==81||lastTwo==100)count++;
+        num/=10;
+    }
+    printf("%d",count);
+    return 0;
+}
