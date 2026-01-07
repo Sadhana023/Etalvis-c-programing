@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int num,x,first,last,pow10=1,result,middle;
+    scanf("%d",&num);
+    x=num;
+    last=num%10;
+    while(x>=10){x=x/10;pow10=pow10*10;}
+    first=x;
+    middle=num%pow10;
+    while(1)
+    {
+        if(last%2==0){result=num;break;}
+        else{result=(first-1)*pow10+middle;break;}
+    }
+    printf("%d",result);
+    return 0;
+}
