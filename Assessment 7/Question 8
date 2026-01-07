@@ -1,0 +1,17 @@
+#include <stdio.h>
+void disp_2digit_even_sum6()
+{
+    int i,t,u;
+    for(i=10;i<=99;i++)
+    {
+        t=i/10;
+        u=i%10;
+        if(i%2==0 && t+u==6)
+            printf("%d",i);
+    }
+}
+int main()
+{
+    disp_2digit_even_sum6();
+    return 0;
+}
