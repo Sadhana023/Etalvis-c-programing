@@ -1,0 +1,11 @@
+#include <stdio.h>
+void sum_2digit_tens7_odd()
+{
+    int i,sum=0;
+    for(i=71;i<=79;i+=2) sum+=i;
+    printf("%d",sum);
+}
+int main(){
+    sum_2digit_tens7_odd();
+    return 0;
+}
