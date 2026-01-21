@@ -1,10 +1,11 @@
 #include <stdio.h>
-int main() {
-    int x,c;
-    printf("Enter a Number: ");
-    scanf("%d",&x);
-    c=x+2;
-    printf("The Output:%d",c);
-
-    return 0;
+void disp_rsum(){
+    int x=0;
+    for(int i=6;i>=1;i--){
+        x+=i;
+}
+printf("%d",x);
+}
+int main(){
+    disp_rsum();
 }
